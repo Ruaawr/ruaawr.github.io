@@ -14,11 +14,11 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            
+                
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -30,43 +30,85 @@
                                 <a class="dropdown-item" href="#" id="tugas1page3">Page 3</a>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#aboutme">AboutMe</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
-
+        <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AboutMe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-right">variable</th>
+                                    <th scope="col">value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-right">nama</td>
+                                    <td>"Amarizky Yoga Pratama"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">nim</td>
+                                    <td>"18.01.53.0100"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">email</td>
+                                    <td>"<a href="mailto:amarizky02@gmail.com">amarizky02@gmail.com</a>"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">kelasmatkul</td>
+                                    <td>"<a href="https://elearning.unisbank.ac.id/course/view.php?id=22571">D1 - Pemrograman Web</a>"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">semester</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">kuliah</td>
+                                    <td>"teknikInformatika@UNISBANK"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">alamat</td>
+                                    <td>"Pemalang"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="mt-4 row">
                 <div class="col-3">
-                    <div class="card text-center" style="background-color: lightblue; border-radius: 10px;">
+                    <div class="card text-center" style="background-color: lightblue; border-radius: 0.25rem;">
                         <div class="card-body">
                             <h5 class="card-title p-2"><b>UTS<br />Pemrograman Web</b></h5>
                             <h5>Amarizky Yoga Pratama</h5>
                             <p class="p-0 m-0">18.01.53.0100</p>
                             <p class="p-0 m-0">TI@UNISBANK</p>
                             <br>
-                            <table>
-                                <tr>
-                                    <td class="text-right font-weight-bold">email</td>
-                                    <td class="text-left"><a href="mailto:amarizky02@gmail.com">amarizky02@gmail.com</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-right font-weight-bold">alamat</td>
-                                    <td class="text-left">Pemalang</td>
-                                </tr>
-                            </table>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutme">AboutMe</button>
                         </div>
                     </div>
                     
-                    <div class="container pt-2">
-                        <div class="row">
-                            <div class="col-sm">
-                                <a class="btn btn-primary w-100" id="btnprev">Previous</a>
-                            </div>
-                            <div class="col-sm">
-                                <a class="btn btn-primary w-100" id="btnnext">Next</a>
-                            </div>
-                        </div>
+                    <div class="btn-group w-100 pt-1" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary w-50" id="btnprev">Previous</button>
+                        <button type="button" class="btn btn-secondary w-50" id="btnnext">Next</button>
                     </div>
                 </div>
                 <div class="col-9">
