@@ -1,6 +1,6 @@
 page = 1;
 
-function nextArticle() {
+function changeArticle() {
     switch (page) {
         case 1:
             text = "<b>Jelaskan kapan saat yang tepat menggunakan metode byID. Jelaskan kelebihan dan kekurangannya.</b><br />Metode byID menggunakan id untuk mencari elemennya. Jika ada elemen yang memakai id yang sama, elemen yang dituju adalah elemen yang pertama. Digunakan saat programmer ingin mengambil elemen dengan id tertentu (karena id pada elemen tidak boleh sama).<br /><br />Kelebihan: <br />- Lebih mudah digunakan karena id sudah jelas<br />- Memudahkan programmer untuk mengintai setiap event dari elemen dengan id bersangkutan<br />Kekurangan:<br />- Id tidak boleh sama pada elemen<br />- Programmer harus menghafal id agar tidak sama pada saat digunakan";
@@ -21,22 +21,22 @@ function nextArticle() {
 $("#btnnext").on("click", function() {
     page++;
     if (page > 3) page = 1;
-    nextArticle(page);
+    changeArticle();
 });
 $("#btnprev").on("click", function() {
     page--;
     if (page < 1) page = 3;
-    nextArticle(page);
+    changeArticle();
 });
 $("#tugas1page1").on("click", function() {
     page = 1;
-    nextArticle(page);
+    changeArticle();
 });
 $("#tugas1page2").on("click", function() {
     page = 2;
-    nextArticle(page);
+    changeArticle();
 });
 $("#tugas1page3").on("click", function() {
     page = 3;
-    nextArticle(page);
+    changeArticle();
 });
